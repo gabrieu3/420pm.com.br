@@ -1,0 +1,22 @@
+.pm420-product-img{
+	width:90%;
+	height:100%;
+	margin-left: 5%;
+}
+
+.pm420-product-nav{
+	width:90%;
+	margin-left: 5%;
+	height:99%;
+	margin-top: 1%;
+}
+
+.pm420-btn-group{
+	
+}
+
+.pm420-product-btn{
+	border: none;
+	background: none;
+	padding: 3px 12px; 
+}
