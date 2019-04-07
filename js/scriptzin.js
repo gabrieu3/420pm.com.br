@@ -72,6 +72,31 @@ function qtPages() {
 }
 
 
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
+
+/**
+ * function to add a click to the product
+ * $qtdeMax
+ */
+function likeme(cod) {
+  console.log(cod);	
+  $.ajax({
+			url: 'src/view/click.php',
+			dataType: 'html',
+			method: "POST",
+			data: {"cod": cod},
+			success: function(html) {
+				$('.pm420-prd-view-'+cod).html(html);
+			},
+		});
+}
+
+
 /**
  * When the DOM is ready do this...
  */
@@ -154,8 +179,3 @@ $(document).ready(function(){
 	});
 
 });
-
-function openInNewTab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();
-}

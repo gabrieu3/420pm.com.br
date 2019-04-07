@@ -1,3 +1,8 @@
+.pm420-product{
+ width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 .pm420-product-img{
 	width:90%;
 	height:100%;
@@ -6,17 +11,29 @@
 
 .pm420-product-nav{
 	width:90%;
-	margin-left: 5%;
+	margin-left: 10%;
 	height:99%;
 	margin-top: 1%;
-}
-
-.pm420-btn-group{
-	
 }
 
 .pm420-product-btn{
 	border: none;
 	background: none;
-	padding: 3px 12px; 
+	padding: 3px 6px; 
 }
+
+.pm420-product-btn:focus{
+
+	border: none;
+	background: none;
+	padding: 3px 6px; 
+
+}
+
+.pm420-product-btn:hover{
+	border: none;
+	background: none;
+	padding: 3px 6px;
+    color: #19b141; /*Verde*/
+}
+
