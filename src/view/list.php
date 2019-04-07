@@ -30,7 +30,7 @@ while ($dados = $movieList->fetch_array()){
 			       data-lightbox-gallery  	= "gallery1" 
 			       data-lightbox-hidpi		= "img/works/1@2x.jpg">
 					
-					 <img src="src/view/image.php?cod='.$dados['cod'].'" class="img-responsive" alt="img">
+					 <img src="src/view/image.php?cod='.$dados['cod'].'" class="img-responsive pm420-product-img" alt="img">
 				</a>
 			</div>	
 	  		<!-- 
