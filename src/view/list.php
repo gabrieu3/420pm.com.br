@@ -25,10 +25,10 @@ while ($dados = $movieList->fetch_array()){
 	    	-->
 	    	<div class="pm420-product-img">
 
-			    <a href  					= "'.$dados['link'].'" 
+			    <a href  					= "#" 
 			       title 					= "'.$dados['title'].'" 
 			       data-lightbox-gallery  	= "gallery1" 
-			       data-lightbox-hidpi		= "img/works/1@2x.jpg">
+			       data-lightbox-hidpi		= "src/view/image.php?cod='.$dados['cod'].'">
 					
 					 <img src="src/view/image.php?cod='.$dados['cod'].'" class="img-responsive pm420-product-img" alt="img">
 				</a>
@@ -49,7 +49,7 @@ while ($dados = $movieList->fetch_array()){
 						<i class="fas fa-cannabis"></i></i>
 						</button>
 
-						<button type="button" onclick="window.location.href = \''.$controller->getSearchYoutube($dados['cod'],$dados['title']).' \' " class="btn btn-default pm420-product-btn">
+						<button type="button" onclick="openInNewTab(\''.$dados['link'].'\')" class="btn btn-default pm420-product-btn">
 						<i class="fas fa-shopping-cart"></i>
 						</button>
 

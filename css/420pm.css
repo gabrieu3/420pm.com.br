@@ -7,6 +7,7 @@
 
 .pm420-product-img{
   border-radius: 5px 5px 0px 0px;
+  width: 100%;
 }
 
 
@@ -19,21 +20,21 @@
 .pm420-product-btn{
 	border: none;
 	background: none;
-	padding: 3px 6px; 
+	padding: 3px 12px; 
 }
 
 .pm420-product-btn:focus{
 
 	border: none;
 	background: none;
-	padding: 3px 6px; 
+	padding: 3px 12px; 
 
 }
 
 .pm420-product-btn:hover{
 	border: none;
 	background: none;
-	padding: 3px 6px;
+	padding: 3px 12px;
     color: #19b141; /*Verde*/
 }
 
