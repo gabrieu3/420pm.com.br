@@ -179,3 +179,19 @@ $(document).ready(function(){
 	});
 
 });
+
+/*Event of button about*/
+$('.about').on('click', function (){
+	var urlpath = 'src/view/about.php';
+	$.ajax({
+			url: urlpath,
+			dataType: 'html',
+			success: function(html) {
+				$('.container').append(html);
+				$('#loading').hide();
+			},
+			error: function() {
+				$('#loading').hide();
+		 },
+		});
+});
